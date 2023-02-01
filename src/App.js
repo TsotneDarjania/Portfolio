@@ -1,12 +1,11 @@
 import './App.css';
-import BackgroundEffect from './components/backgroundEffect/BackgroundEffect';
-import P5Canvas from './components/p5Canvas/P5Canvas';
+import Menu from './components/menu/Menu';
 
 
 function App() {
   return (
     <div className="App">
-        <P5Canvas />
+       <Menu />
     </div>
   );
 }
