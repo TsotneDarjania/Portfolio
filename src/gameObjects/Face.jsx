@@ -5,26 +5,22 @@ const Face = () => {
 
     const [eyePointClass,setEyePointClass] = useState('eye-point-center-center')
 
-    const [eyeLeftPointClass,setEyeLeftPointClass] = useState('')
-    const [eyeRightPointClass,setEyeRightPointClass] = useState('')
-
-    
     const [eyeLeftBrowClass,setLeftBrowClass] = useState('eye-brow-normal')
     const [eyeRightBrowClass,setRightBrowClass] = useState('eye-brow-normal')
 
   return (
     <div className="face">
         <div className="eye left-eye">
-            <div className={ "eye-point " + eyePointClass + " " + eyeLeftPointClass}></div>
+            <div className={ "eye-point " + eyePointClass}></div>
         </div>
         <div className="eye right-eye">
-            <div className={ "eye-point " + eyePointClass + " " + eyeRightPointClass}></div>
+            <div className={ "eye-point " + eyePointClass}></div>
         </div>
 
         <div className={"eye-brow left-eye-brow " + eyeLeftBrowClass}></div>
         <div className={"eye-brow right-eye-brow " + eyeRightBrowClass}></div>
 
-        <div onMouseOver={ () => {  setLeftBrowClass("left-eye-brow-angry"); setRightBrowClass("right-eye-brow-angry");  }} className="bottom-zones">
+        <div onMouseOver={ () => {  }} className="bottom-zones">
             <div onMouseOver={ () => setEyePointClass("eye-point-left-bottom")} className="left-zone"></div>
             <div onMouseOver={ () => setEyePointClass("eye-point-center-bottom")} className="center-zone"></div>
             <div onMouseOver={ () => setEyePointClass("eye-point-right-bottom")} className="right-zone"></div>
@@ -39,7 +35,6 @@ const Face = () => {
             <div onMouseOver={ () => setEyePointClass("eye-point-center-top")} className="center-zone"></div>
             <div onMouseOver={ () => setEyePointClass("eye-point-right-top")} className="right-zone"></div>
         </div>
-        <div onMouseLeave={() => { setEyeLeftPointClass(" "); setEyeRightPointClass(" ")} } onMouseOver={ () => {setEyeLeftPointClass("eye-left-point-ugly"); setEyeRightPointClass("eye-right-point-ugly") } } className='face-center-zone'>  </div>
     </div>
   )
 }

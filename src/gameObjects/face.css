@@ -11,6 +11,24 @@
 
     width:100vw;
     height: 100vh;
+
+    z-index: 10;
+
+    animation-name: face-anim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+@keyframes face-anim {
+    from{
+        opacity: 0;
+        top: -100vw;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+    
 }
 
 .eye{
@@ -171,22 +189,6 @@
 }
 .right-eye-brow-beg{
     transform: rotate(20deg);
-}
-
-.face-center-zone{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-
-    margin-top: auto;
-    margin-bottom: auto;
-    top: -130px;
-    bottom: 0;
 }
 
 .eye-left-point-ugly{
