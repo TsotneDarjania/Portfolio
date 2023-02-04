@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {FaLayerGroup} from 'react-icons/fa'
 import {RiProfileLine} from "react-icons/ri"
+import Projects from '../projects/Projects'
 import Profile from '../review/Profile'
 import style from "./menu.module.css"
 
@@ -10,6 +11,8 @@ const Menu = (props) => {
     const [leftMenuClass, setLeftMenuClass] = useState("left-hide")
     const [centerMenuClass, setCenterMenuClass] = useState("center-hide")
     const [rightMenuClass, setRightMenuClass] = useState("right-hide")
+
+    const [showProfile, setShoeProfile] = useState(false)
 
     useEffect(() => {
         if(props.show === false){
@@ -71,17 +74,19 @@ const Menu = (props) => {
             <div className={style["menu-icon"]}>
                 <FaLayerGroup />
             </div>
-            <button className={style["menu-button"]}> Show me</button>
+            <button onClick={ () => {  setShoeProfile(false); window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> Show me</button>
         </div>
         <div className={style["right-menu"] + " " + style[rightMenuClass]}>
             <h2 className={style["menu-title"]}> Profile </h2>
             <div className={style["menu-icon"]}>
                 <RiProfileLine />
             </div>
-            <button onClick={ () => {  window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> Review </button>
+            <button onClick={ () => { setShoeProfile(true);  window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> Review </button>
         </div>
-
-        <Profile />
+        
+        {
+            showProfile ? <Profile /> : <Projects />
+        }
     </div>
   )
 }

@@ -1,0 +1,25 @@
+.projects{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.upArrow{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(53, 23, 2);
+    cursor: pointer;
+    font-size: 70px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
