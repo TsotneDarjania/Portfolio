@@ -50,7 +50,7 @@ const Profile = () => {
           piece of design - yes, no, 
           and WOW! Wow is the one to aim for” - Milton Glaser 
         </p>
-        <p className={style.rightContentText}> Let's create something wonderful and unique for your company. </p>
+        <p className={style.rightContentText}> Contact Form </p>
 
         <Form />
 

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
 .projects{
     position: absolute;
     top: 100vh;
@@ -22,4 +25,140 @@
     width: 100px;
     margin-top: 20px;
     text-align: center;
+    z-index: 10;
 }
+
+.mainContainer{
+    width: 100vw;
+    position: absolute;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+.hide{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+
+
+.container{
+    width: 1500px;
+    height: 700px;
+    display: flex;
+}
+
+.containerBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Passion One', cursive;
+    padding: 20px 40px;
+    color: rgb(82, 82, 82);
+}
+
+.textContainer{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+
+    color: rgb(240, 142, 5);
+}
+
+.link{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link:hover{
+    color: rgb(202, 98, 0);
+}
+
+.textContainer h2{
+    font-weight: normal;
+    font-size: 30px;
+}
+.textContainer p{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.technologiesContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technologiesBox{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.rightContainer{
+    background-image: url("../../images/projectsImage/restaurant-image.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 230% 120%;
+
+    animation-name: backgroundImageAnimation;
+    animation-duration: 17s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes backgroundImageAnimation {
+    0%{
+        background-position: 50% 50%;
+    }
+    25%{
+        background-position: 10% 50%;
+    }
+    50%{
+        background-position: 10% 70%;
+    }
+    75%{
+        background-position: 80% 70%;
+    }
+    100%{
+        background-position: 50% 50%;
+    }
+    
+}
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    animation-name: none;
+    opacity: 1;
+    transition: 0.5s;
+}
+/* .show-button{
+    background-color: rgb(28, 28, 28);
+} */
