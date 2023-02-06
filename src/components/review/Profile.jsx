@@ -15,7 +15,6 @@ const Profile = () => {
       <div className={style.leftContent}>
           <div className={style.profileImage}>
             <img src={profile} alt="" />
-
           </div>
           <div className={style.habits}>
             <div className={style.habitsText}> I Love

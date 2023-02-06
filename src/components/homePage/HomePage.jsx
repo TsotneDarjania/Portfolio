@@ -20,16 +20,16 @@ const HomePage = () => {
             }}> MORE </button>
         </div>
 
-        <div className={style.icon + " "+ style.github}>
+        <div onClick={ () => window.open("https://github.com/TsotneDarjania")} className={style.icon + " "+ style.github}>
             <FaGithub />
         </div>
-        <div className={style.icon + " "+ style.twitter}>
+        <div onClick={ () => window.open("https://twitter.com/tsotne_darjania")} className={style.icon + " "+ style.twitter}>
             <FaTwitter />
         </div>
-        <div className={style.icon + " "+ style.linkedin}>
+        <div onClick={ () => window.open("https://www.linkedin.com/in/tsotne-darjania-58380b231/")} className={style.icon + " "+ style.linkedin}>
             <FaLinkedin />
         </div>
-        <div className={style.icon + " "+ style.facebook}>
+        <div onClick={ () => window.open("https://www.facebook.com/tsotne.darjania")} className={style.icon + " "+ style.facebook}>
             <FaFacebook />
         </div>
         <Menu zIndex = {menuZetIndex} show={showMenu} />
