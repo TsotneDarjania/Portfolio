@@ -13,7 +13,7 @@ const HomePage = () => {
     <div className={style.homePage}>
         <Face />
         <div className={style.myContent}>
-            <h2> <em> Hi, I am Tsotne Darjania </em> <br /> <span> Front-End Developer </span> <strong> from  Tbilisi </strong></h2>
+            <h2> <em> Hi, I am Tsotne Darjania </em> <br /> <span> Front-End Developer </span> <strong> from <br />  Tbilisi </strong></h2>
             <button onClick={ () => { 
                  setShowMenu(true); 
                  setMenuZetIndex(100) 

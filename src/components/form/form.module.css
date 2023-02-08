@@ -11,3 +11,10 @@
     color: black !important;
     background-color: white !important;
 }
+
+
+@media screen and (max-width:620px) {
+    .form{
+        width: 80%;
+    }
+}

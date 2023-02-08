@@ -10,15 +10,17 @@ const Face = () => {
 
   return (
     <div className="face">
-        <div className="eye left-eye">
-            <div className={ "eye-point " + eyePointClass}></div>
-        </div>
-        <div className="eye right-eye">
-            <div className={ "eye-point " + eyePointClass}></div>
-        </div>
+        <div className='face-parts'>
+            <div className="eye left-eye">
+                <div className={ "eye-point " + eyePointClass}></div>
+            </div>
+            <div className="eye right-eye">
+                <div className={ "eye-point " + eyePointClass}></div>
+            </div>
 
-        <div className={"eye-brow left-eye-brow " + eyeLeftBrowClass}></div>
-        <div className={"eye-brow right-eye-brow " + eyeRightBrowClass}></div>
+            <div className={"eye-brow left-eye-brow " + eyeLeftBrowClass}></div>
+            <div className={"eye-brow right-eye-brow " + eyeRightBrowClass}></div>
+        </div>
 
         <div onMouseOver={ () => {  }} className="bottom-zones">
             <div onMouseOver={ () => setEyePointClass("eye-point-left-bottom")} className="left-zone"></div>

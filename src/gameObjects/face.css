@@ -31,9 +31,25 @@
     
 }
 
+.face-parts{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 .eye{
     position: absolute;
-    top:300px;
+    top:80px;
     width: 200px;
     height: 200px;
     border-radius: 100vw;
@@ -88,14 +104,13 @@
     right: 0;
 
     transition: 0.5s;
+    top: 40px;
 }
 
 .left-eye-brow{
-    top: 240px;
     left: -310px;
 }
 .right-eye-brow{
-    top: 240px;
     right: -310px;
 }
 
@@ -196,4 +211,64 @@
 }
 .eye-right-point-ugly{
     left: -130px;
+}
+
+@media screen and (max-width:620px) {
+    .face-parts{
+       
+    }
+    .eye{
+        width: 110px;
+        height: 110px;
+    }
+
+    .eye-point{
+        width: 30px;
+        height: 30px;
+    }
+
+    .eye-point-center-bottom{
+        top:60px;
+    }
+    .eye-point-left-bottom{
+        top:50px;
+        left: -60px;
+    }
+    .eye-point-right-bottom{
+        top:50px;
+        left: 60px;
+    }
+    
+    .eye-point-center-top{
+        top:-60px;
+    }
+    .eye-point-left-top{
+        top:-50px;
+        left: -60px;
+    }
+    .eye-point-right-top{
+        top:-50px;
+        left: 60px;
+    }
+
+    .eye-brow{
+        position: absolute;
+        width: 100px;
+        height: 30px;
+    }
+
+    .left-eye{
+        left: -200px;
+    }
+    .right-eye{
+        right: -200px;
+    }
+    .left-eye-brow{
+        left: -210px;
+    }
+    .right-eye-brow{
+        right: -210px;
+    }
+    
+      
 }

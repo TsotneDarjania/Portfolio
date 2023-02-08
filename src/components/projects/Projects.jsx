@@ -112,42 +112,42 @@ const Projects = () => {
             </div>
         </div>
         <div ref={buttonsRef} className={style.buttons}>
-        <button
-            onClick={() => handleButtonClick(0, [
-                "https://github.com/TsotneDarjania/restaurant-landing-page",
-                "https://tsotnedarjania.github.io/restaurant-landing-page/",
-            ])}
-            className={style.button}
-            >
-            1
-        </button>
-        <button
-            onClick={() => handleButtonClick(1, [
-                "https://github.com/TsotneDarjania/BootstrapLandingpage",
-                "https://tsotnedarjania.github.io/BootstrapLandingpage/",
-            ])}
-            className={style.button}
-            >
-            2
-        </button>
-        <button
-            onClick={() => handleButtonClick(2, [
-                "https://github.com/TsotneDarjania/company-website",
-                "https://tsotnedarjania.github.io/company-website/",
-            ])}
-            className={style.button}
-            >
-            3
-        </button>
-        <button
-            onClick={() => handleButtonClick(3, [
-                "https://github.com/TsotneDarjania/WebCalculator",
-                "https://tsotnedarjania.github.io/WebCalculator/",
-            ])}
-            className={style.button}
-            >
-            4
-        </button>
+            <button
+                onClick={() => handleButtonClick(0, [
+                    "https://github.com/TsotneDarjania/restaurant-landing-page",
+                    "https://tsotnedarjania.github.io/restaurant-landing-page/",
+                ])}
+                className={style.button}
+                >
+                1
+            </button>
+            <button
+                onClick={() => handleButtonClick(1, [
+                    "https://github.com/TsotneDarjania/BootstrapLandingpage",
+                    "https://tsotnedarjania.github.io/BootstrapLandingpage/",
+                ])}
+                className={style.button}
+                >
+                2
+            </button>
+            <button
+                onClick={() => handleButtonClick(2, [
+                    "https://github.com/TsotneDarjania/company-website",
+                    "https://tsotnedarjania.github.io/company-website/",
+                ])}
+                className={style.button}
+                >
+                3
+            </button>
+            <button
+                onClick={() => handleButtonClick(3, [
+                    "https://github.com/TsotneDarjania/WebCalculator",
+                    "https://tsotnedarjania.github.io/WebCalculator/",
+                ])}
+                className={style.button}
+                >
+                4
+            </button>
         </div>
     </div>
   )

@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 224, 183);
+    box-sizing: border-box;
 }
 
 .myContent{
@@ -18,7 +19,7 @@
     
     margin-top: auto;
     margin-bottom: auto;
-    top: 300px;
+    top: 50vh;
     bottom: 0;
 
     margin-left: auto;
@@ -26,7 +27,7 @@
     left:0;
     right: 0;
 
-    width: 500px;
+    width: 100vw;
     gap: 10px;
 }
 em{
@@ -153,4 +154,20 @@ button:hover{
     animation-delay: 1s;
 
     z-index: 120;
+}
+
+
+
+
+@media screen and (max-width:850px) {
+   .myContent{
+    top: 40vh;
+    width: 95vw;
+   }
+   .closeMenu{
+    position: absolute;
+    top: 45%;
+
+    z-index: 120;
+}
 }

@@ -123,3 +123,127 @@
     margin-top: 2px;
     font-family: 'Passion One', cursive;
 }
+
+
+@media screen and (max-width:1200px) {
+    .menu-item{
+        width: 20%;
+        justify-content:flex-start;
+    }
+    .menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        column-gap: 40px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:1000px) {
+    .menu-item{
+        width: 20%;
+        justify-content:flex-start;
+    }
+    .menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        column-gap: 70px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .language-icon{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .menu-item{
+        width: 20%;
+        justify-content:flex-start;
+    }
+    .language-icon{
+        font-size: 30px;
+    }
+    .menu-icon{
+        font-size: 40px;
+    }
+    .projects-title{
+        display: none;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        column-gap: 50px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .left-menu{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(255, 191, 95);
+        top: 0vw;
+        left: 0vw;
+        opacity: 1;
+        transition: 0.7s;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .left-hide{
+        top: -100vw;
+        opacity: 0;
+    }
+
+    .center-menu{
+        position: absolute;
+        width: 100%;
+        top:  50%;
+        left: 0;
+        height: 25%;
+        background-color: rgb(255, 170, 91);
+        z-index: 20;
+        transition: 0.7s;
+        opacity: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .center-hide{
+        left: -100vh;
+        opacity: 0;
+    }
+
+
+    .right-menu{
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        background-color: rgb(255, 191, 95);
+        top: 75%;
+        left: 0;
+        opacity: 1;
+        transition: 0.7s;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-hide{
+        top: 200vh;
+        opacity: 0;
+    }
+}

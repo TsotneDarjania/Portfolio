@@ -12,9 +12,22 @@ const Menu = (props) => {
     const [centerMenuClass, setCenterMenuClass] = useState("center-hide")
     const [rightMenuClass, setRightMenuClass] = useState("right-hide")
 
+
+
     const [showProfile, setShoeProfile] = useState(false)
+    const [menuButtonTexts, setMenuButtonTexts] = useState( [
+        "Show me",
+        "Shoe me"
+    ])
 
     useEffect(() => {
+
+        if(window.innerWidth > 620){
+            setMenuButtonTexts(["Show me", "Review"])
+        } else {
+            setMenuButtonTexts(["Portfolio", "Contact"])
+        }
+
         if(props.show === false){
             setLeftMenuClass("left-hide")
             setCenterMenuClass("center-hide")
@@ -70,18 +83,22 @@ const Menu = (props) => {
             </div>
         </div>
         <div className={style["center-menu"] + " " + style[centerMenuClass]}>
-            <h2 className={style["menu-title"]}> Portfolio Projects </h2>
+            <h2 className={style["menu-title"]+" "+style["projects-title"]}> Portfolio Projects </h2>
             <div className={style["menu-icon"]}>
                 <FaLayerGroup />
             </div>
-            <button onClick={ () => {  setShoeProfile(false); window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> Show me</button>
+            <button onClick={ () => {  setShoeProfile(false); window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> 
+                { menuButtonTexts[0] }
+            </button>
         </div>
         <div className={style["right-menu"] + " " + style[rightMenuClass]}>
             <h2 className={style["menu-title"]}> Profile </h2>
             <div className={style["menu-icon"]}>
                 <RiProfileLine />
             </div>
-            <button onClick={ () => { setShoeProfile(true);  window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}> Review </button>
+            <button onClick={ () => { setShoeProfile(true);  window.scrollTo( { top: 1000 , behavior: "smooth" })}} className={style["menu-button"]}>
+                { menuButtonTexts[1] }
+            </button>
         </div>
         
         {

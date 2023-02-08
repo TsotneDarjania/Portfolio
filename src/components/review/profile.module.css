@@ -32,7 +32,6 @@
     background-color: rgb(249, 188, 114);
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .profileImage{
@@ -96,6 +95,51 @@
 }
 .rightContentText{
     font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+    .aboutMeText p{
+        font-size: 20px;
+    }
+    .profileImage{
+        width: 40%;
+        height: 30%;
+    }
+    .profileImage img{
+        width: 80%;
+        height: 80%;
+        box-shadow: 9px 9px 0px 1px rgb(241, 125, 53);
+    }
+    .habitsText{
+        font-size: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:1050px) {
+    .leftContent{
+        width: 100%;
+        background-color: rgb(249, 188, 114);
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+    }
+    .rightContent{
+        width: 100%;
+    }
 }
 
 
