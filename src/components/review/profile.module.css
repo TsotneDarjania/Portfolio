@@ -122,8 +122,27 @@
         height: 80%;
         box-shadow: 9px 9px 0px 1px rgb(241, 125, 53);
     }
+    .quote{
+        font-size: 23px;
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+    }
     .habitsText{
         font-size: 30px;
+    }
+    .upArrow{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(53, 23, 2);
+        cursor: pointer;
+        font-size: 70px;
+        left: 0;
+        right: 0;
+        width: 100px;
+        top: 20px;
+        text-align: center;
     }
 
 }

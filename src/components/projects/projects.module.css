@@ -232,7 +232,8 @@
     }
 
     .upArrow{
-       margin-top: -10px;
+       bottom: 30px; 
+       right: 0px;
     }
 
 }
