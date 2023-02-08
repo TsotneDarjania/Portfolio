@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ab840f2a.css",
-    "main.js": "/Portfolio/static/js/main.364fc202.js",
+    "main.css": "/Portfolio/static/css/main.c978d516.css",
+    "main.js": "/Portfolio/static/js/main.6476abdf.js",
     "static/media/restaurant-image.jpg": "/Portfolio/static/media/restaurant-image.63694f8c46dea0c62ba1.jpg",
     "static/media/cats-website.jpg": "/Portfolio/static/media/cats-website.2a4a85fea7457424ad7a.jpg",
     "static/media/bootstrap-page.jpg": "/Portfolio/static/media/bootstrap-page.5d75a27ad5c57d75efa1.jpg",
     "static/media/profile.jpg": "/Portfolio/static/media/profile.d0a44c7f4340759bd4a6.jpg",
     "static/media/calculator.jpg": "/Portfolio/static/media/calculator.e826bcb97d275416725e.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.ab840f2a.css.map": "/Portfolio/static/css/main.ab840f2a.css.map",
-    "main.364fc202.js.map": "/Portfolio/static/js/main.364fc202.js.map"
+    "main.c978d516.css.map": "/Portfolio/static/css/main.c978d516.css.map",
+    "main.6476abdf.js.map": "/Portfolio/static/js/main.6476abdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab840f2a.css",
-    "static/js/main.364fc202.js"
+    "static/css/main.c978d516.css",
+    "static/js/main.6476abdf.js"
   ]
 }
