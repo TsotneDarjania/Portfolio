@@ -92,7 +92,7 @@ const Menu = (props) => {
             </button>
         </div>
         <div className={style["right-menu"] + " " + style[rightMenuClass]}>
-            <h2 className={style["menu-title"]}> Profile </h2>
+            <h2 className={style["menu-title"]+" "+style["profile-title"]}> Profile </h2>
             <div className={style["menu-icon"]}>
                 <RiProfileLine />
             </div>
