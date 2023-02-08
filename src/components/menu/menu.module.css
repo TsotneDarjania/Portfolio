@@ -207,15 +207,17 @@
 
     .center-menu{
         position: absolute;
+        top: initial;
+        bottom: 25vh;
         width: 100%;
-        top:  50%;
-        left: 0;
-        height: 25%;
+        left: 0%;
+        height: 25vh;
         background-color: rgb(255, 170, 91);
         z-index: 20;
         transition: 0.7s;
         opacity: 1;
-
+        
+    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -230,9 +232,10 @@
     .right-menu{
         position: absolute;
         width: 100%;
-        height: 25%;
+        height: 25vh;
         background-color: rgb(255, 191, 95);
-        top: 75%;
+        top: initial;
+        bottom: 0vh;
         left: 0;
         opacity: 1;
         transition: 0.7s;
@@ -243,7 +246,7 @@
         align-items: center;
     }
     .right-hide{
-        top: 200vh;
+        bottom: -50vh;
         opacity: 0;
     }
 }
