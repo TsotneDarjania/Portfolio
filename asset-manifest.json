@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c978d516.css",
+    "main.css": "/Portfolio/static/css/main.3e596ad7.css",
     "main.js": "/Portfolio/static/js/main.6476abdf.js",
     "static/media/restaurant-image.jpg": "/Portfolio/static/media/restaurant-image.63694f8c46dea0c62ba1.jpg",
     "static/media/cats-website.jpg": "/Portfolio/static/media/cats-website.2a4a85fea7457424ad7a.jpg",
@@ -8,11 +8,11 @@
     "static/media/profile.jpg": "/Portfolio/static/media/profile.d0a44c7f4340759bd4a6.jpg",
     "static/media/calculator.jpg": "/Portfolio/static/media/calculator.e826bcb97d275416725e.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.c978d516.css.map": "/Portfolio/static/css/main.c978d516.css.map",
+    "main.3e596ad7.css.map": "/Portfolio/static/css/main.3e596ad7.css.map",
     "main.6476abdf.js.map": "/Portfolio/static/js/main.6476abdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.c978d516.css",
+    "static/css/main.3e596ad7.css",
     "static/js/main.6476abdf.js"
   ]
 }
