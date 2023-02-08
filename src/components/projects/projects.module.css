@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
 
 .projects{
     position: absolute;
@@ -91,9 +91,12 @@
     font-weight: normal;
     font-size: 30px;
 }
+
 .textContainer p{
     font-weight: normal;
     font-size: 25px;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 0px;
 }
 
 .technologiesContainer{
@@ -227,8 +230,8 @@
 
     .textContainer p{
         font-weight: normal;
-        font-size: 23px;
-        word-break:normal;
+        font-size: 19px;
+        font-family: 'Sen', sans-serif;
     }
 
     .upArrow{
